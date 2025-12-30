@@ -2,34 +2,28 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>درصدگیر و معدل‌گیر</title>
+  <title>درصدگیر کنکور</title>
+
+  <!-- فونت فارسی -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="calculator">
-  <div class="tabs">
-    <button class="tab active" onclick="showTab('percent')">درصدگیر</button>
-    <button class="tab" onclick="showTab('gpa')">معدل‌گیر</button>
+  <div class="top-bar">
+    <span>درصدگیر</span>
+    <button class="theme-btn" onclick="toggleTheme()">🌓</button>
   </div>
 
-  <!-- Percent Calculator -->
-  <div id="percent" class="tab-content active">
-    <input type="number" id="total" placeholder="تعداد کل سوال">
-    <input type="number" id="correct" placeholder="تعداد درست">
-    <input type="number" id="wrong" placeholder="تعداد غلط">
-    <button onclick="calculatePercent()">محاسبه درصد</button>
-    <div class="result" id="percentResult"></div>
-  </div>
+  <input type="number" id="total" placeholder="تعداد کل سوال">
+  <input type="number" id="correct" placeholder="تعداد درست">
+  <input type="number" id="wrong" placeholder="تعداد غلط">
 
-  <!-- GPA Calculator -->
-  <div id="gpa" class="tab-content">
-    <input type="number" class="score" placeholder="نمره درس ۱">
-    <input type="number" class="score" placeholder="نمره درس ۲">
-    <input type="number" class="score" placeholder="نمره درس ۳">
-    <button onclick="calculateGPA()">محاسبه معدل</button>
-    <div class="result" id="gpaResult"></div>
-  </div>
+  <button class="calc-btn" onclick="calculatePercent()">محاسبه درصد</button>
+
+  <div class="result" id="result"></div>
 </div>
 
 <script src="script.js"></script>

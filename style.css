@@ -1,68 +1,77 @@
-body {
-    background: #0f172a;
-    font-family: sans-serif;
+:root {
+    --bg: #0f172a;
+    --card: #020617;
+    --input: #1e293b;
+    --btn: #38bdf8;
+    --text: #ffffff;
+  }
+  
+  body.light {
+    --bg: #e5e7eb;
+    --card: #ffffff;
+    --input: #f1f5f9;
+    --btn: #0ea5e9;
+    --text: #020617;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #fff;
   }
   
   .calculator {
-    background: #020617;
+    background: var(--card);
     padding: 20px;
-    border-radius: 12px;
     width: 300px;
+    border-radius: 14px;
   }
   
-  .tabs {
+  .top-bar {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 15px;
   }
   
-  .tab {
-    flex: 1;
-    padding: 10px;
-    background: #1e293b;
+  .theme-btn {
+    background: none;
     border: none;
-    color: #fff;
+    font-size: 20px;
     cursor: pointer;
-  }
-  
-  .tab.active {
-    background: #38bdf8;
-    color: #000;
-  }
-  
-  .tab-content {
-    display: none;
-  }
-  
-  .tab-content.active {
-    display: block;
   }
   
   input {
     width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
-    padding: 8px;
-    background: #1e293b;
+    border-radius: 8px;
     border: none;
-    color: #fff;
-    border-radius: 6px;
+    background: var(--input);
+    color: var(--text);
   }
   
-  button {
+  .calc-btn {
     width: 100%;
     padding: 10px;
-    background: #38bdf8;
+    background: var(--btn);
     border: none;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 6px;
+    font-weight: 600;
   }
   
   .result {
-    margin-top: 10px;
+    margin-top: 12px;
     text-align: center;
     font-size: 18px;
   }
