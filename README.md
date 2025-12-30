@@ -23,8 +23,7 @@ Includes dark/light mode and emotional feedback with emojis 😄
 - Vanilla JavaScript
 
 ## 📸 Preview
-![پیش‌نمایش ماشین‌حساب](Images/Screenshot 2025-12-30 230110.png)
-
+![درصد گیر](https://github.com/par3aheydari/konkur-percent-calculator/blob/main/Images/Screenshot%202025-12-30%20230110.png)
 
 ## 📦 How to Use
 1. Enter total questions
