@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>درصدگیر و معدل‌گیر</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+  <div class="tabs">
+    <button class="tab active" onclick="showTab('percent')">درصدگیر</button>
+    <button class="tab" onclick="showTab('gpa')">معدل‌گیر</button>
+  </div>
+
+  <!-- Percent Calculator -->
+  <div id="percent" class="tab-content active">
+    <input type="number" id="total" placeholder="تعداد کل سوال">
+    <input type="number" id="correct" placeholder="تعداد درست">
+    <input type="number" id="wrong" placeholder="تعداد غلط">
+    <button onclick="calculatePercent()">محاسبه درصد</button>
+    <div class="result" id="percentResult"></div>
+  </div>
+
+  <!-- GPA Calculator -->
+  <div id="gpa" class="tab-content">
+    <input type="number" class="score" placeholder="نمره درس ۱">
+    <input type="number" class="score" placeholder="نمره درس ۲">
+    <input type="number" class="score" placeholder="نمره درس ۳">
+    <button onclick="calculateGPA()">محاسبه معدل</button>
+    <div class="result" id="gpaResult"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
